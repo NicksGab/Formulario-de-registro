@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <script type="module" defer src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <main id="cadastro">
+      <p> Formulário <br> de <br> Cadastro</p> <br>
+      <form id="form" action="" method="post">
+        <label for="nome">Nome:</label> <br>
+        <input type="text" name="nome" id="nome"> <br>
+
+        <label for="sobrenome">Sobrenome:</label> <br>
+        <input type="text" name="sobrenome" id="sobrenome"> <br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" name="email" id="email" placeholder="exemplo@ex.com"> <br>
+
+        <label for="fone">Telefone:</label> <br>
+        <input type="tel" name="fone" id="fone" > <br>
+
+        <label for="senha">Senha:</label> <br>
+        <input type="password" name="senha" id="senha"> <br>
+
+        <label for="confirmarSenha">Confirme sua senha:</label> <br>
+        <input type="password" name="confirmarSenha" id="confirmarSenha"> <br>
+
+        <button type="submit">Cadastrar</button>
+        <button type="button" id="irParaRegistrados">Registros</button>
+        <button id="reset" type="reset">Reiniciar</button>
+      </form>
+      <div id="resposta">
+        <span id="span"></span>
+      </div>
+    </main>
+
+    <div id="body" class="hide">
+      <div id="main">
+        <header>
+          <ul>
+            <li><u>REGISTROS</u></li>
+            <li><a id="voltarCadastro"><u>Registrar</u></a></li>
+          </ul>
+        </header>
+     
+        <div id="registros">
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hide {
+  display: none !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom left, orangered, rgb(224, 224, 0));
+}
+ 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 720px;
+  background: lavenderblush;
+  border-radius: 50px;
+  border: 1px solid rgb(58,58,59);
+  box-shadow: -3px 3px 8px gray;
+  overflow: hidden;
+}
+
+form {
+  width: 60%;
+  height: 65%;
+}
+
+main p {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(0, 122, 116);
+  text-shadow: 2px 2px 4px black, 2px 2px 4px black;
+  margin-top: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(0, 158, 150);
+  text-shadow: 1px 1px 2px black, 1px 1px 2px black;
+}
+
+input {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 5px;
+  border: 1px solid rgb(0, 63, 60);
+  background: rgba(0,0,0,0.1);
+}
+
+input:focus {
+  border: 2px solid rgb(0, 63, 60);
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid rgb(0, 255, 242);
+  background: rgb(0, 78, 73);
+  color: lavenderblush;
+  font-size: 16px;
+  transition: .1s;
+}
+
+button[type="submit"]:hover {
+  background: rgb(0, 255, 242);
+  border: 1px solid rgb(0, 51, 48);
+  color: rgb(0, 60, 60);
+}
+
+button[type="submit"]:active {
+  background: yellow;
+  border: 1px solid rgb(0, 51, 48);
+  color: rgb(0, 60, 60);
+}
+
+
+#form #irParaRegistrados {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+  background: rgb(248, 235, 239); 
+  border: 1px solid rgb(0, 40, 40);
+  color: rgb(0, 45, 45);
+  font-size: 16px;
+  transition: .1s;
+}
+
+#form #irParaRegistrados:hover {
+  background: rgb(0, 255, 242);
+  border: 1px solid rgb(0, 51, 48);
+  color: rgb(0, 60, 60);  
+}
+
+#form #irParaRegistrados:active {
+  background: rgb(255, 195, 0);  
+  border: 1px solid rgb(0, 45, 45);
+}
+
+button[type="reset"] {
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+  background: rgb(248, 235, 239);  
+  color: rgb(0, 45, 45);
+  border: 1px solid rgb(0, 40, 40);
+  font-size: 16px;
+  transition: .1s;
+}
+
+button[type="reset"]:hover {
+  background: rgb(0, 255, 242);
+  border: 1px solid rgb(0, 51, 48);
+  color: rgb(0, 60, 60);  
+}
+
+button[type="reset"]:active {
+  background: rgb(255, 166, 0);  
+  border: 1px solid rgb(0, 45, 45);
+}
+
+
+#resposta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+}
+
+/*
+================================
+registros
+================================
+*/
+
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #151515;
+  background-image: url(https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+#voltarCadastro {
+  cursor: pointer;
+}
+
+#main {
+  position: relative;
+  background: rgb(235, 235, 235);
+  width: 90%;
+  height: 90%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#main header {
+  background: rgb(134, 134, 134);
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 2px 5px rgb(85, 85, 85);
+}
+
+#main header ul {
+  position: relative;
+}
+
+#main header ul li:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: oblique;
+  list-style: none;
+  float: left;
+  font-size: 30px;
+  margin: 15px;
+}
+
+#main header ul li:last-child {
+  text-transform: lowercase;
+  font-weight: bold;
+  font-style: oblique;
+  list-style: none;
+  float: right;
+  font-size: 20px;
+  margin: 20px 25px 20px 20px;
+}
+
+#registros {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 90%;
+}
+
+#registros div {
+  max-height: 290px;
+  border: 1px solid black;
+  box-shadow: -2px 2px 5px rgb(66, 66, 66);
+  border-radius: 10px;
+  transition: .3s;
+}
+
+#registros div:hover {
+  transform: translateY(-10px);
+}
+
+#registros div {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+}
